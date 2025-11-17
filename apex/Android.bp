@@ -16,3 +16,23 @@ prebuilt_apex {
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
 }
+
+prebuilt_apex {
+    name: "com.google.android.tethering",
+    apps: [
+        "ServiceConnectivityResourcesGoogle",
+        "TetheringGoogle",
+    ],
+    source_apex_name: "com.google.android.tethering",
+    required: [
+        "framework-tethering.com.android.tethering",
+    ],
+    owner: "google",
+    src: "com.google.android.tethering.apex",
+    overrides: [
+        "com.android.tethering",
+    ],
+    prefer: true,
+    exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
+}
