@@ -1,4 +1,19 @@
 prebuilt_apex {
+    name: "com.google.android.cellbroadcast",
+    apps: [
+        "GoogleCellBroadcastServiceModule",
+        "GoogleCellBroadcastApp",
+    ],
+    source_apex_name: "com.google.android.cellbroadcast",
+    owner: "google",
+    src: "com.google.android.cellbroadcast.apex",
+    overrides: [
+        "com.android.cellbroadcast",
+    ],
+    prefer: true,
+}
+
+prebuilt_apex {
     name: "com.google.android.permission",
     apps: [
         "GooglePermissionController",

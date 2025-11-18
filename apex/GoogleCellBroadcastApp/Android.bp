@@ -1,0 +1,6 @@
+android_app {
+    name: "GoogleCellBroadcastApp",
+    sdk_version: "system_current",
+    srcs: ["GoogleCellBroadcastApp.apk"],
+    manifest: "AndroidManifest.xml",
+}
