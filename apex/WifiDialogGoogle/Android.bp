@@ -1,0 +1,6 @@
+android_app {
+    name: "WifiDialogGoogle",
+    sdk_version: "system_current",
+    srcs: ["WifiDialogGoogle.apk"],
+    manifest: "AndroidManifest.xml",
+}

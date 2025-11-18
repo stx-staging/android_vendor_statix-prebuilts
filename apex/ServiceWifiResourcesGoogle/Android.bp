@@ -1,0 +1,6 @@
+android_app {
+    name: "ServiceWifiResourcesGoogle",
+    sdk_version: "system_current",
+    srcs: ["ServiceWifiResourcesGoogle.apk"],
+    manifest: "AndroidManifest.xml",
+}

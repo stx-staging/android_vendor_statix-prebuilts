@@ -51,3 +51,25 @@ prebuilt_apex {
     exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
 }
+
+prebuilt_apex {
+    name: "com.google.android.wifi",
+    apps: [
+        "OsuLoginGoogle",
+        "ServiceWifiResourcesGoogle",
+        "WifiDialogGoogle",
+    ],
+    source_apex_name: "com.google.android.wifi",
+    required: [
+        "framework-wifi.com.android.wifi",
+        "service-wifi.com.android.wifi",
+    ],
+    owner: "google",
+    src: "com.google.android.wifi.apex",
+    overrides: [
+        "com.android.wifi",
+    ],
+    prefer: true,
+    exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
+}
