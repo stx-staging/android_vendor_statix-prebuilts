@@ -11,6 +11,7 @@ android_app_import {
     privileged: true,
     system_ext_specific: true,
     optional_uses_libs: [
+        "com.android.extensions.appfunctions",
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
