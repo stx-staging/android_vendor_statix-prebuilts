@@ -54,6 +54,7 @@ prebuilt_apex {
     source_apex_name: "com.google.android.tethering",
     required: [
         "framework-tethering.com.android.tethering",
+        "libcom.android.tethering.connectivity_native_system",
     ],
     owner: "google",
     src: "com.google.android.tethering.apex",
@@ -85,4 +86,23 @@ prebuilt_apex {
     prefer: true,
     exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
+}
+
+cc_library_headers {
+    name: "connectivity_native_headers",
+    export_include_dirs: ["include"],
+}
+
+cc_prebuilt_library_shared {
+    name: "libcom.android.tethering.connectivity_native_system",
+    stem: "libcom.android.tethering.connectivity_native_system",
+    target: {
+        android_arm: {
+            srcs: ["lib/libcom.android.tethering.connectivity_native.so"],
+        },
+    },
+    shared_libs: [
+        "libbinder_ndk",
+    ],
+    compile_multilib: "32",
 }
