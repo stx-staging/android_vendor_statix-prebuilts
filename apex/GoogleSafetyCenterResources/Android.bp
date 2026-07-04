@@ -1,6 +1,0 @@
-android_app {
-    name: "GoogleSafetyCenterResources",
-    sdk_version: "system_current",
-    srcs: ["GoogleSafetyCenterResources.apk"],
-    manifest: "AndroidManifest.xml",
-}

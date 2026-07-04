@@ -1,0 +1,54 @@
+android_app {
+    name: "GoogleCellBroadcastApp",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "GoogleCellBroadcastServiceModule",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "GooglePermissionController",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "GoogleSafetyCenterResources",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "OsuLoginGoogle",
+    sdk_version: "system_current",
+}
+
+android_app {
+	name: "PrebuiltGmsCoreVic",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "ServiceConnectivityResourcesGoogle",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "ServiceWifiResourcesGoogle",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "TetheringGoogle",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "WebAppServiceGoogle",
+    sdk_version: "system_current",
+}
+
+android_app {
+    name: "WifiDialogGoogle",
+    sdk_version: "system_current",
+}

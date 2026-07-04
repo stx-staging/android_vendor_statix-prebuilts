@@ -1,6 +1,0 @@
-android_app {
-    name: "WebAppServiceGoogle",
-    sdk_version: "system_current",
-    srcs: ["WebAppServiceGoogle.apk"],
-    manifest: "AndroidManifest.xml",
-}

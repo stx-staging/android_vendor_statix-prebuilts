@@ -1,6 +1,0 @@
-android_app {
-    name: "ServiceConnectivityResourcesGoogle",
-    sdk_version: "system_current",
-    srcs: ["ServiceConnectivityResourcesGoogle.apk"],
-    manifest: "AndroidManifest.xml",
-}
